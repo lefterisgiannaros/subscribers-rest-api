@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/15
+GET http://localhost:3000/subscribers/5e0df2667885ee7d2926181b
 
 ###
 
@@ -12,4 +12,15 @@ content-type: application/json
 {
     "name": "Amazing Person",
     "subscribedToChannel": "Lefteris Giannaros"
+}
+
+###
+DELETE http://localhost:3000/subscribers/5e0df2667885ee7d2926181b
+
+###
+PATCH http://localhost:3000/subscribers/5e0dfd536880be8e75480bf0
+Content-Type: application/json
+
+{
+    "name": "New name for amazing person"
 }
